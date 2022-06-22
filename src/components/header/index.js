@@ -17,28 +17,18 @@ const Project = ["project1", "project2", "project3", "project4"];
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
   const handleMenuClose = () => {
     setAnchorEl(null);
-    handleMobileMenuClose();
   };
 
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
+  
   const menuId = "primary-search-account-menu";
   const renderMenu = (
     <Menu
@@ -60,12 +50,9 @@ export const Header = () => {
       {Project.map((elem) => {
       return <MenuItem onClick={handleMenuClose}>{elem}</MenuItem>
       })}
-      {/* <MenuItem onClick={handleMenuClose}>My account</MenuItem> */}
     </Menu>
   );
 
-  const [dense, setDense] = React.useState(false);
-  const [secondary, setSecondary] = React.useState(false);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="inherit">
