@@ -10,6 +10,9 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.text.secondary,
   borderRadius: "20px",
+  hover: {
+    background: "red",
+  }
 }));
 
 export const Home = () => {
@@ -19,7 +22,7 @@ export const Home = () => {
       // style={{ border: "1px solid black" }}
       >
         ok
-        <Grid style={{ justifyContent: "center"  }} container spacing={2}>
+        <Grid style={{ justifyContent: "center"  }} container spacing={15}>
           <Grid style={{  minHeight:"400px" }} item xs={10} md={5}>
             {/* <Box sx={{ backgroundColor: "blue", height: "100px" }}> */}
             <Title size="3em">{home.BigTitle}</Title>
@@ -30,16 +33,17 @@ export const Home = () => {
             <Item  style={{  minHeight:"400px" }}>xs=6 md=4</Item>
           </Grid>
           <Grid item xs={10} md={10}>
-            <Item style={{background: "#659999",  
-                background: "-webkit-linear-gradient(to bottom, #f4791f, #659999)",  
-            background: "linear-gradient(to bottom, #f4791f, #659999)"
-, minHeight:"500px" }}>
+            <Item style={{
+            background: "rgb(125,196,233)",
+            background: "linear-gradient(180deg, rgba(125,196,233,1) 0%, rgba(255,159,58,0.9220063025210083) 100%)"
+, minHeight:"1000px" }}>
               <div>xs=6 md=4</div>
             </Item>
           </Grid>
           <Grid item xs={10} md={10}>
-            <Item style={{background: "rgb(172,180,179)",
-background: "linear-gradient(180deg, rgba(172,180,179,1) 0%, rgba(174,140,104,1) 100%)", minHeight:"500px" }}>xs=6 md=8</Item>
+            <Item style={{background: "rgb(125,196,233)",
+background: "linear-gradient(163deg, rgba(125,196,233,1) 0%, rgba(255,159,58,0.9220063025210083) 100%)", 
+minHeight:"1000px" }}>xs=6 md=8</Item>
           </Grid>
         </Grid>
       </div>
