@@ -2,7 +2,7 @@ import * as React from "react";
 import { Box, Paper, Grid, styled } from "@mui/material";
 import { home } from "./paragraph";
 import { Title } from "./style";
-
+import {backgrounds} from "./backgroundColors.js"
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -10,10 +10,11 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.text.secondary,
   borderRadius: "20px",
-  hover: {
-    background: "red",
-  }
+  "&:hover": {
+    boxShadow: "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
+    }
 }));
+
 
 export const Home = () => {
   return (
@@ -34,16 +35,17 @@ export const Home = () => {
           </Grid>
           <Grid item xs={10} md={10}>
             <Item style={{
-            background: "rgb(125,196,233)",
-            background: "linear-gradient(180deg, rgba(125,196,233,1) 0%, rgba(255,159,58,0.9220063025210083) 100%)"
-, minHeight:"1000px" }}>
+            background: backgrounds[0].background, 
+            background: backgrounds[0].linearGradient,
+            minHeight:"1000px" }}>
               <div>xs=6 md=4</div>
             </Item>
           </Grid>
           <Grid item xs={10} md={10}>
-            <Item style={{background: "rgb(125,196,233)",
-background: "linear-gradient(163deg, rgba(125,196,233,1) 0%, rgba(255,159,58,0.9220063025210083) 100%)", 
-minHeight:"1000px" }}>xs=6 md=8</Item>
+            <Item style={{
+            background: backgrounds[1].background, 
+            background: backgrounds[1].linearGradient,
+            minHeight:"1000px" }}>xs=6 md=8</Item>
           </Grid>
         </Grid>
       </div>
