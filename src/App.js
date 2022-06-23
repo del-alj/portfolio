@@ -1,17 +1,17 @@
 import "./App.css";
 import { Header } from "./components/header/index.js";
-import {Home} from "./components/home/index.js";
-import {Wave} from "./components/wave/index.js";
-import * as React from 'react';
-import Container from '@mui/material/Container';
+import { Home } from "./components/home/index.js";
+import { Footer } from "./components/footer/index.js";
+import * as React from "react";
+import { ContainerDiv } from "./components/style/styles.js";
 function App() {
   return (
     <div className="App">
-      {/* <Header />
-      <Container maxWidth="xl">
-        <Home/>
-      </Container> */}
-      <Wave/>
+      <Header />
+      <ContainerDiv style={{ border: "1px solid balck" }} maxWidth="xl">
+        <Home />
+      </ContainerDiv>
+      <Footer />
     </div>
   );
 }

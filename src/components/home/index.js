@@ -22,7 +22,6 @@ export const Home = () => {
       <div 
       // style={{ border: "1px solid black" }}
       >
-        ok
         <Grid style={{ justifyContent: "center"  }} container spacing={15}>
           <Grid style={{  minHeight:"400px" }} item xs={10} md={5}>
             {/* <Box sx={{ backgroundColor: "blue", height: "100px" }}> */}

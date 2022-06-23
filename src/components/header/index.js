@@ -28,7 +28,6 @@ export const Header = () => {
     setAnchorEl(null);
   };
 
-  
   const menuId = "primary-search-account-menu";
   const renderMenu = (
     <Menu
@@ -54,8 +53,8 @@ export const Header = () => {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="inherit">
+    <Box  sx={{ flexGrow: 1 }}>
+      <AppBar position="fixed" color="inherit">
         <Toolbar>
           <Button color="inherit">{pages[0]}</Button>
           <Button
@@ -70,7 +69,6 @@ export const Header = () => {
           <Button color="inherit">{pages[2]}</Button>
           <Button color="inherit">{pages[3]}</Button>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            {/* News */}
           </Typography>
           <Button color="inherit">
             <Link target="_blank" href="https://www.linkedin.com/in/douae-el-alj/">
