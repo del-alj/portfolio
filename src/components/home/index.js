@@ -1,33 +1,88 @@
 import * as React from "react";
-import { Box, Paper, Grid, styled } from "@mui/material";
-import { home } from "./paragraph";
-import { Title, Card } from "./style";
-import { backgrounds } from "./backgroundColors.js";
-import tetris from "../../assets/redtetris.png";
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-  borderRadius: "20px",
-  "&:hover": {
-    boxShadow:
-      "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px"
-  }
-}));
-const projects = home.projects;
+import { Box, Paper, styled } from "@mui/material";
+import { home } from "../../assets/data";
+import { palette } from "../../assets/color";
+import mewallk from "../../assets/mewallk.gif";
+import { Animation } from "./animations.js";
 export const Home = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <div
-      // style={{ border: "1px solid black" }}
+    <div
+      style={{
+        // border: "1px solid red",
+        display: "flex",
+        flexDirection: "column",
+        minWidth: "30em",
+        minHeight: "100vh"
+      }}
+    >
+      <Box
+        sx={{
+          // border: "1px solid black",
+          alignSelf: "flex-start",
+          flexDirection: "column",
+          width: 474,
+          marginLeft: "150px"
+        }}
       >
-        <Grid style={{ justifyContent: "center" }} container spacing={15}>
-         
-         
-        </Grid>
-      </div>
-    </Box>
+        {/* 602 khesni nhayed mardin hna o padin me parent */}
+        <p
+          style={{
+            textAlign: "left",
+            color: palette.yellow,
+            fontSize: "1.2em",
+            fontWeight: "normal !important"
+          }}
+        >
+          {home.titel0}
+        </p>
+        <p
+          style={{
+            textAlign: "left",
+            color: palette.gray,
+            fontSize: "3.3em",
+            fontWeight: "normal !important"
+          }}
+        >
+          {home.titel1}
+        </p>
+        <p
+          style={{
+            textAlign: "left",
+            color: palette.gray,
+            opacity: 0.7,
+            fontSize: "3em",
+            fontWeight: `normal !important`
+          }}
+        >
+          {home.titel2}
+        </p>
+        <p
+          style={{
+            textAlign: "left",
+            color: palette.whitePurpel,
+            fontFamily: "nord",
+            fontWeight: `normal !important`,
+            fontSize: "1.5em"
+          }}
+        >
+          {home.text}
+        </p>
+      </Box>
+
+      <Box>
+        <Animation
+        // style={{ border: "1px solid yellow" }}
+        src={mewallk}
+        >
+          <div class="outer">
+            <div class="inner"  ></div>
+            {/* <img
+              src={mewallk}
+              style={{ height: "450px", border: "1px solid red" }}
+            /> */}
+          </div>
+        </Animation>
+      </Box>
+    </div>
   );
 };

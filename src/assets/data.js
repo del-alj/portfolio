@@ -1,8 +1,14 @@
+export const header = {
+  logo: "Douae Elalj",
+  list: ["About", "projects", "Contact"],
+  button: "Resume"
+};
+
 export const home = {
   titel0: "Hello, My name is",
   titel1: "Douae elalj.",
   titel2: "software engineer and frontend developer.",
-  text: "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement."
+  text: "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.",
 };
 
 export const about = {
@@ -22,7 +28,15 @@ export const projects = [
   {
     name: "Matcha",
     text: `Matcha is an online dating and geosocial networking application. Matcha uses a "double opt-in" system where both users must like each other before they can exchange messages.`,
-    tags: ["React", "Axios", "Node.Js", "Socket.io", "Expres.Js", "Js", "styled-Component"]
+    tags: [
+      "React",
+      "Axios",
+      "Node.Js",
+      "Socket.io",
+      "Expres.Js",
+      "Js",
+      "styled-Component"
+    ]
   },
   {
     name: "Corware",

@@ -1,7 +1,18 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@font-face {
+  font-family: norwester;
+  src: url("./font/norwester.otf") format("opentype");
 }
 
+
+.css-1r4kch7-MuiContainer-root {
+  font-family: 'norwester'!important;
+}
+
+.App {
+  text-align: center;
+  font-family: 'norwester' !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

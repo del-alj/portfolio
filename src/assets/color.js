@@ -1,5 +1,6 @@
 export const palette = {
-  Purpel: "#59618D",
+  première: "#59618D",
+  purpel: "#59618D",
   gray: "#BFC4D8",
   whitePurpel: "#D9D9D9",
   yellow: "#FCD000",
