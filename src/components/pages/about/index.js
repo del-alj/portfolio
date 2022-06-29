@@ -1,59 +1,125 @@
 import * as React from "react";
-import { Box, Paper, Grid, styled } from "@mui/material";
-import { home } from "./paragraph";
-import { Title, Card } from "./style";
-import { backgrounds } from "./backgroundColors.js";
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-  borderRadius: "20px",
-  "&:hover": {
-    boxShadow:
-      "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px"
-  }
-}));
-const projects = home.projects;
+import { Box, Paper, styled } from "@mui/material";
+import { about } from "../../../assets/data";
+import { palette } from "../../../assets/color";
+import me from "../../../assets/me.gif";
+import { backgrounds } from "../contact/backgroundColors";
+import PropTypes from "prop-types";
+function Item(props) {
+  const { sx, ...other } = props;
+  return (
+    <Box
+      sx={{
+        color: `${palette.blue}`,
+        border: "1px solid",
+        borderColor: `${palette.purpel}`,
+        p: 1,
+        borderRadius: 1,
+        fontSize: "0.875rem",
+        width: "7em",
+        fontWeight: "600",
+        ...sx
+      }}
+      {...other}
+    />
+  );
+}
+
+Item.propTypes = {
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: PropTypes.oneOfType([
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool])
+    ),
+    PropTypes.func,
+    PropTypes.object
+  ])
+};
+
 export const About = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <div
-      // style={{ border: "1px solid black" }}
+    <div
+      style={{
+        border: "1px solid red",
+        display: "flex",
+        flexDirection: "column",
+        minWidth: "30em",
+        minHeight: "100vh",
+        backgroundColor: palette.whitePurpel
+      }}
+    >
+      <Box
+        sx={{
+          // border: "1px solid black",
+          alignSelf: "center",
+          flexDirection: "column",
+          // width: 474,
+          // marginLeft: "150px",
+          display: "flex"
+        }}
       >
-        <Grid style={{ justifyContent: "center"}} container spacing={15}>
-          <Grid style={{ minHeight: "400px", border:"1px solid black!important"  }} item xs={10} md={5}>
-            {/* <Box sx={{ backgroundColor: "blue", height: "100px" }}> */}
-            <Title size="3em">{home.BigTitle}</Title>
-            <Title size="1em">{home.text}</Title>
-            {/* </Box> */}
-          </Grid>
-          <Grid item xs={10} md={5}>
-            <Item style={{ minHeight: "400px" }}>xs=6 md=4</Item>
-          </Grid>
-          {projects.map((project, index) => { return (<Grid item xs={10} md={5}>
-            <Item
-              style={{
-                background: backgrounds[0].background,
-                background: backgrounds[0].linearGradient,
-                minHeight: "700px",
-                justifyContent: "center"
-              }}
-            >
-              <Card>
-                <h1>{project.title}</h1>
-                <div>
-                  <img src={project.picture} />
-                </div>
-              </Card>
-            </Item>
-          </Grid>)
+        {/* 602 khesni nhayed mardin hna o padin me parent */}
 
-})}
-         
-        </Grid>
-      </div>
-    </Box>
+        <p
+          style={{
+            textAlign: "center",
+            color: palette.blue,
+            fontSize: "3.3em",
+            fontWeight: "normal !important"
+          }}
+        >
+          About me
+        </p>
+        <Box
+          style={{
+            // border: "1px solid black",
+            alignSelf: "center",
+    
+            display: "flex",
+            width: "650px",
+            justifyContent: "space-between",
+            // flexDirection: "column",
+            marginTop: "150px"
+          }}
+        >
+          <img
+            style={{
+              width: "300px",
+              height: "auto"
+            }}
+            src={me}
+          />
+
+          <p
+            style={{
+              textAlign: "left",
+              color: palette.purpel,
+              fontFamily: "nord",
+              fontWeight: `normal !important`,
+              fontSize: "1.5em",
+              width: "300px"
+            }}
+          >
+            {about.paragraph}
+          </p>
+        </Box>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: "repeat(6, 1fr)",
+            marginTop: "7em",
+            gridGap: "0.5em",
+            width: "100%",
+            justifyContent: "center"
+          }}
+        >
+          {about.tags.map((elem, index) => {
+            return <Item>{elem}</Item>;
+          })}
+        </Box>
+      </Box>
+    </div>
   );
 };

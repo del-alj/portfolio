@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App" style={{ background: palette.première }}>
       <ContainerDiv style={{ border: "1px solid balck" }} maxWidth="xl">
-        <Header />
         <Router>
+        <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
