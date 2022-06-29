@@ -24,7 +24,34 @@ export const Home = () => {
       // style={{ border: "1px solid black" }}
       >
         <Grid style={{ justifyContent: "center" }} container spacing={15}>
-         
+          <Grid style={{ minHeight: "400px" }} item xs={10} md={5}>
+            {/* <Box sx={{ backgroundColor: "blue", height: "100px" }}> */}
+            <Title size="3em">{home.BigTitle}</Title>
+            <Title size="1em">{home.text}</Title>
+            {/* </Box> */}
+          </Grid>
+          <Grid item xs={10} md={5}>
+            <Item style={{ minHeight: "400px" }}>xs=6 md=4</Item>
+          </Grid>
+          {projects.map((project, index) => { return (<Grid item xs={10} md={5}>
+            <Item
+              style={{
+                background: backgrounds[0].background,
+                background: backgrounds[0].linearGradient,
+                minHeight: "700px",
+                justifyContent: "center"
+              }}
+            >
+              <Card>
+                <h1>{project.title}</h1>
+                <div>
+                  <img src={project.picture} />
+                </div>
+              </Card>
+            </Item>
+          </Grid>)
+
+})}
          
         </Grid>
       </div>

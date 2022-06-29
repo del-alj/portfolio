@@ -54,7 +54,7 @@ export const Header = () => {
 
   return (
     <Box  sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" color="inherit">
+      <AppBar position="fixed" color="transpatent">
         <Toolbar>
           <Button color="inherit">{pages[0]}</Button>
           <Button
