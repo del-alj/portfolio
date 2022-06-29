@@ -3,7 +3,6 @@ import { Box, Paper, styled } from "@mui/material";
 import { about } from "../../../assets/data";
 import { palette } from "../../../assets/color";
 import me from "../../../assets/me.gif";
-import { backgrounds } from "../contact/backgroundColors";
 import PropTypes from "prop-types";
 function Item(props) {
   const { sx, ...other } = props;
