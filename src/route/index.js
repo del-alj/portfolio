@@ -4,9 +4,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from '../components/home';
-import About from '../components/about';
-import Projects from '../components/projects';
+import Home from '../components/pages/home';
+import About from '../components/pages/about';
+import Projects from '../components/pages/projects';
 import Contact from '../components/contact';
 
 function App() {

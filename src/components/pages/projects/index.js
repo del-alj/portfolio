@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Box, Paper, styled } from "@mui/material";
-import { home } from "../../assets/data";
-import { palette } from "../../assets/color";
-import mewallk from "../../assets/mewallk.gif";
+import { home } from "../../../assets/data";
+import { palette } from "../../../assets/color";
+import mewallk from "../../../assets/mewallk.gif";
 
-export const Home = () => {
+export const Projects = () => {
   return (
     <div
       style={{
@@ -15,17 +15,18 @@ export const Home = () => {
         minHeight: "100vh"
       }}
     >
-      <Box
-        sx={{
+      <div
+        style={{
           // border: "1px solid black",
           alignSelf: "flex-start",
           flexDirection: "column",
-          width: 400,
+          // width: 400,
           marginLeft: "150px"
+
         }}
       >
         {/* 602 khesni nhayed mardin hna o padin me parent */}
-        <h3
+        <p
           style={{
             textAlign: "left",
             color: palette.yellow,
@@ -34,8 +35,8 @@ export const Home = () => {
           }}
         >
           {home.titel0}
-        </h3>
-        <h1
+        </p>
+        <p
           style={{
             textAlign: "left",
             color: palette.gray,
@@ -44,8 +45,8 @@ export const Home = () => {
           }}
         >
           {home.titel1}
-        </h1>
-        <h1
+        </p>
+        <p
           style={{
             textAlign: "left",
             color: palette.gray,
@@ -55,7 +56,7 @@ export const Home = () => {
           }}
         >
           {home.titel2}
-        </h1>
+        </p>
         <p
           style={{
             textAlign: "left",
@@ -66,7 +67,7 @@ export const Home = () => {
         >
           {home.text}
         </p>
-      </Box>
+      </div>
 
       <Box>
         <div

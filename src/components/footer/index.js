@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Box, BottomNavigation } from "@mui/material";
-import { Title } from "../home/style";
-import { home } from "../home/paragraph";
+import { Title } from "../pages/home/style";
 import {palette} from "../../assets/color";
 
 export const Footer = () => {
@@ -15,7 +14,7 @@ export const Footer = () => {
             alignItems: "center",
           }}
         >
-          <Title style={{textAlign :"left", color:palette.rose}} size="1em">{`Made by ${home.autor} @2022`}</Title>
+          <Title style={{textAlign :"left", color:palette.rose}} size="1em">{`Made by del-alj @2022`}</Title>
         </div>
       </BottomNavigation>
     </Box>

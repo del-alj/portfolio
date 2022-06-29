@@ -1,5 +1,4 @@
-import tetris from "../../assets/redtetris.png";
-import matcha from "../../assets/matcha.gif";
+
 export const home = {
   BigTitle: "Hi. i'm Douae EL alj a Software Engineer",
   text: "I’m also a front-end developer .... .",
@@ -9,14 +8,13 @@ export const home = {
       title: "Red-Tetris",
       type: "FullStack",
       description: "",
-      picture: tetris
     },
     {
       title: "Matcha",
       type: "FullStack",
       description:
         "Matcha is a dating web app, This application was made for the sole purpose of learning how to develop a web application",
-      picture: matcha
+    
     },
 
     {

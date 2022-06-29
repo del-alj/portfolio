@@ -3,7 +3,6 @@ import { Box, Paper, Grid, styled } from "@mui/material";
 import { home } from "./paragraph";
 import { Title, Card } from "./style";
 import { backgrounds } from "./backgroundColors.js";
-import tetris from "../../assets/redtetris.png";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -17,14 +16,14 @@ const Item = styled(Paper)(({ theme }) => ({
   }
 }));
 const projects = home.projects;
-export const Home = () => {
+export const About = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <div
       // style={{ border: "1px solid black" }}
       >
         <Grid style={{ justifyContent: "center"}} container spacing={15}>
-          <Grid style={{ minHeight: "400px"border:"1px solid black!important"  }} item xs={10} md={5}>
+          <Grid style={{ minHeight: "400px", border:"1px solid black!important"  }} item xs={10} md={5}>
             {/* <Box sx={{ backgroundColor: "blue", height: "100px" }}> */}
             <Title size="3em">{home.BigTitle}</Title>
             <Title size="1em">{home.text}</Title>
