@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Animation = styled.div`
   /* border: 1px solid red; */
-  height: 550px;
+  height: 380px;
   .outer {
     height: 100%;
     overflow: hidden;
   }
   .inner {
-    height: 200%;
+    height: 100%;
     width: 100%;
     -webkit-animation: mymove 10s linear infinite;
     /* Safari and Chrome */
@@ -18,7 +18,7 @@ export const Animation = styled.div`
     props.src ? `url(${props.src})` : "none"};
 
     /* animation-fill-mode: forwards; */
-    /* background-size: 100% 50%; */
+    background-size: 250px auto;
     background-repeat: no-repeat;
     /* background-size: 200% 100%; */
     border: "1px solid red";

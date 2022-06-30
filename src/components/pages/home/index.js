@@ -14,7 +14,7 @@ export const Home = () => {
         display: "flex",
         flexDirection: "column",
         minWidth: "30em",
-        minHeight: "100vh"
+        minHeight: "100%"
       }}
     >
       <Box
