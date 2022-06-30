@@ -22,18 +22,20 @@
 .App {
   text-align: center;
   font-family: 'norwester' !important;
+  min-width: max-content;
+
   /* min-width: -webkit-fill-available;
   width: 100%; */
   /* background-color: red; */
 }
 
 
-/* 
+
 @media only screen and (max-width: 600px) {
   .css-1r4kch7-MuiContainer-root {
-    font-family: 'norwester'!important;
+    /* font-family: 'norwester'!important; */
     
-    padding: 10px !important;
+    padding: 160px 0px !important;
   
   }
-} */
+}
