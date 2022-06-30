@@ -8,18 +8,19 @@ import { Projects } from "./components/pages/projects/index.js";
 import { Contact } from "./components/pages/contact/index.js";
 import { ContainerDiv } from "./components/style/styles.js";
 import { palette } from "./assets/color";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App" style={{ background: palette.première }}>
+    <div
+      className="App"
+      style={{
+        background: palette.première
+      }}
+    >
       <ContainerDiv style={{ border: "1px solid balck" }} maxWidth="xl">
         <Router>
-        <Header />
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

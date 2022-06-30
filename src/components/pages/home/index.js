@@ -4,6 +4,7 @@ import { home } from "../../../assets/data";
 import { palette } from "../../../assets/color";
 import mewallk from "../../../assets/mewallk.gif";
 import { Animation } from "./animations.js";
+
 export const Home = () => {
   return (
     <div
@@ -71,11 +72,11 @@ export const Home = () => {
 
       <Box>
         <Animation
-        // style={{ border: "1px solid yellow" }}
-        src={mewallk}
+          // style={{ border: "1px solid yellow" }}
+          src={mewallk}
         >
           <div class="outer">
-            <div class="inner"  ></div>
+            <div class="inner"></div>
             {/* <img
               src={mewallk}
               style={{ height: "450px", border: "1px solid red" }}

@@ -17,7 +17,7 @@ function Item(props) {
         fontSize: "0.875rem",
         width: "7em",
         fontWeight: "600",
-        paddingLeft: "2em",
+        // paddingLeft: "2em",
         ...sx
       }}
       {...other}
