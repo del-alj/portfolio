@@ -39,7 +39,7 @@ export const Contact = () => {
         flexDirection: "column",
         minWidth: "30em",
         minHeight: "70vh",
-        backgroundColor: palette.gray,
+        // backgroundColor: palette.gray,
         paddingBottom: "3em"
       }}
     >

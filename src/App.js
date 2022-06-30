@@ -15,10 +15,10 @@ function App() {
     <div
       className="App"
       style={{
-        background: palette.première
+        background: palette.purpel,
       }}
     >
-      <ContainerDiv style={{ border: "1px solid balck" }} maxWidth="xl">
+      <ContainerDiv maxWidth="xl">
         <Router>
           <Header />
           <Routes>

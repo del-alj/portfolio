@@ -4,6 +4,7 @@ import { about } from "../../../assets/data";
 import { palette } from "../../../assets/color";
 import me from "../../../assets/me.gif";
 import PropTypes from "prop-types";
+
 function Item(props) {
   const { sx, ...other } = props;
   return (
@@ -40,14 +41,14 @@ Item.propTypes = {
 
 export const About = () => {
   return (
-    <div
+    <div 
       style={{
-        border: "1px solid red",
+        // border: "1px solid red",
         display: "flex",
         flexDirection: "column",
         minWidth: "30em",
         minHeight: "100%",
-        backgroundColor: palette.gray
+        // backgroundColor: palette.gray
       }}
     >
       <Box

@@ -3,28 +3,51 @@ import { AppBar, Box, Button, Typography, Toolbar } from "@mui/material";
 import { header } from "../../assets/data";
 import { palette } from "../../assets/color";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 export const Header = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const isMenuOpen = Boolean(anchorEl);
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  const [theme, setTheme] = useState(0);
 
   const list = header.list;
+
+  const changeColorBc = (bc) => {
+    const elem = document.getElementsByClassName("App");
+    const elem1 = document.getElementsByClassName("page");
+    elem[0].style.background = bc;
+    elem1[0].style.background = bc;
+  };
+  const path = window.location.href;
+  let temp = "";
+  temp = path.split("/");
+  useEffect(() => {
+    if (temp[3]) {
+      setTheme(1);
+      changeColorBc(palette.whitePurpel);
+
+    } else setTheme(0);
+  }, [temp]);
+
   return (
     // <Box sx={{ flexGrow: 1, mr: 60 }}>
 
-    <AppBar style={{ background: palette.première, marginLeft: "50px" }}>
+    <AppBar
+      className="page"
+      style={{
+        background: palette.première,
+        // background: "none",
+        marginLeft: "50px"
+      }}
+    >
       <Toolbar>
-        <Link style={{textDecoration: "none"}} to={`/`}>
+        <Link style={{ textDecoration: "none" }} to={`/`}>
           <Button
-            onClick={() => {}}
+            onClick={(e) => {
+              changeColorBc(palette.purpel);
+              setTheme(0);
+            }}
             color="inherit"
             style={{
               fontSize: "1em",
-              color: palette.gray,
+              color: `${theme === 0 ? palette.gray : palette.blue}`,
               fontFamily: "norwester"
             }}
           >
@@ -36,15 +59,26 @@ export const Header = () => {
           component="div"
           sx={{ flexGrow: 1 }}
         ></Typography>
-        {list.map((elem) => {
+        {list.map((elem, index) => {
           return (
-            <Link style={{textDecoration: "none"}} to={`/${elem}`}>
-              {" "}
+            <Link
+              key={`Link${index}`}
+              style={{ textDecoration: "none" }}
+              to={`/${elem}`}
+              onClick={(e) => {
+                changeColorBc(palette.whitePurpel);
+                setTheme(1);
+              }}
+            >
               <Button
+                key={`button${index}`}
                 aria-haspopup="true"
-                onClick={handleProfileMenuOpen}
+                // onClick={handleProfileMenuOpen}
                 color="inherit"
-                style={{ color: palette.gray, fontFamily: "norwester" }}
+                style={{
+                  color: `${theme === 0 ? palette.gray : palette.blue}`,
+                  fontFamily: "norwester"
+                }}
               >
                 {elem}
               </Button>
@@ -52,13 +86,14 @@ export const Header = () => {
           );
         })}
         <Button
+          className=""
           color="inherit"
           style={{
             fontSize: "0.7em",
             paddingTop: "3px",
             paddingBottom: "3px",
-            color: palette.yellow,
-            border: `2px solid ${palette.yellow}`,
+            color: theme === 0 ? palette.yellow : palette.rose,
+            border: `2px solid ${theme === 0 ? palette.yellow : palette.rose}`,
             fontFamily: "norwester"
           }}
         >

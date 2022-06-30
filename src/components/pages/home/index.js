@@ -6,6 +6,7 @@ import mewallk from "../../../assets/mewallk.gif";
 import { Animation } from "./animations.js";
 
 export const Home = () => {
+
   return (
     <div
       style={{
@@ -75,8 +76,8 @@ export const Home = () => {
           // style={{ border: "1px solid yellow" }}
           src={mewallk}
         >
-          <div class="outer">
-            <div class="inner"></div>
+          <div className="outer">
+            <div className="inner"></div>
             {/* <img
               src={mewallk}
               style={{ height: "450px", border: "1px solid red" }}
