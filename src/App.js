@@ -28,8 +28,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Router>
-      </ContainerDiv>
       <Footer />
+      </ContainerDiv>
     </div>
   );
 }

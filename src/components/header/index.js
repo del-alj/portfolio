@@ -27,17 +27,28 @@ export const Header = () => {
   }, [temp]);
 
   return (
-    // <Box sx={{ flexGrow: 1, mr: 60 }}>
+    <Box sx={{ flexGrow: 1, mr: 60 }}>
 
     <AppBar
       className="page"
       style={{
         background: palette.première,
-        // background: "none",
-        marginLeft: "50px"
+        boxShadow: "none",
+        // maxWidth: "1440px",
+        // display: "flex",
+        // alignItems: "center",
       }}
     >
-      <Toolbar>
+      <Toolbar style={{
+        display: "flex",
+        justifyItems: "center",
+        maxWidth: "1440px",
+        flexDirection: "space-between",
+        width: "100%",
+        marginLeft: "auto",
+        boxSizing: "border-box",
+        marginRight: "auto",
+      }}>
         <Link style={{ textDecoration: "none" }} to={`/`}>
           <Button
             onClick={(e) => {
@@ -101,6 +112,6 @@ export const Header = () => {
         </Button>
       </Toolbar>
     </AppBar>
-    // </Box>
+    </Box>
   );
 };

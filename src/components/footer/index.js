@@ -9,9 +9,12 @@ export const Footer = () => {
       <BottomNavigation
         style={{
           //  background: palette.première,
+          maxWidth: "1440px",
+          width: "100%",
           background: "none",
-          borderTop: `1px solid ${palette.whitePurpel}`,
-          opacity: "1"
+          borderTop: `1px solid ${palette.yellowOpacity}`,
+          borderTopOpacity: "0.7"
+          // opacity: "1"
         }}
       >
         <div

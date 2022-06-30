@@ -16,13 +16,24 @@
 
 .css-1r4kch7-MuiContainer-root {
   font-family: 'norwester'!important;
+
 }
 
 .App {
   text-align: center;
   font-family: 'norwester' !important;
+  /* min-width: -webkit-fill-available;
+  width: 100%; */
   /* background-color: red; */
 }
 
 
-
+/* 
+@media only screen and (max-width: 600px) {
+  .css-1r4kch7-MuiContainer-root {
+    font-family: 'norwester'!important;
+    
+    padding: 10px !important;
+  
+  }
+} */

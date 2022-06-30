@@ -6,5 +6,6 @@ export const palette = {
   yellow: "#FCD000",
   blue: "#5372BD",
   rose: "#D75E8D",
-  gayBrder: "#D3D6E3"
+  gayBrder: "#D3D6E3",
+  yellowOpacity : "rgba(252, 208, 0, .5)"
 };
