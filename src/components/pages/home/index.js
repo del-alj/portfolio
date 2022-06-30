@@ -60,7 +60,7 @@ export const Home = () => {
           style={{
             textAlign: "left",
             color: palette.whitePurpel,
-            fontFamily: "nord",
+            fontFamily: `'Roboto', sans-serif`,
             fontWeight: `normal !important`,
             fontSize: "1.5em"
           }}

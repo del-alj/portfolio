@@ -17,6 +17,7 @@ function Item(props) {
         fontSize: "0.875rem",
         width: "7em",
         fontWeight: "600",
+        paddingLeft: "2em",
         ...sx
       }}
       {...other}
@@ -45,8 +46,8 @@ export const About = () => {
         display: "flex",
         flexDirection: "column",
         minWidth: "30em",
-        minHeight: "100vh",
-        backgroundColor: palette.whitePurpel
+        minHeight: "100%",
+        backgroundColor: palette.gray
       }}
     >
       <Box
@@ -95,7 +96,7 @@ export const About = () => {
             style={{
               textAlign: "left",
               color: palette.purpel,
-              fontFamily: "nord",
+              fontFamily: `'Roboto', sans-serif`,
               fontWeight: `normal !important`,
               fontSize: "1.5em",
               width: "300px"
@@ -111,7 +112,8 @@ export const About = () => {
             marginTop: "7em",
             gridGap: "0.5em",
             width: "100%",
-            justifyContent: "center"
+            justifyContent: "center",
+            paddingBottom: "3em"
           }}
         >
           {about.tags.map((elem, index) => {

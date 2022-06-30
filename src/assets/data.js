@@ -23,7 +23,8 @@ export const projects = [
   {
     name: "Red-Tetris",
     text: "Tetris, players complete lines by moving differently shaped pieces (tetrominoes), which descend onto the playing field.",
-    tags: ["React", "Axios", "Node.Js", "Socket.io", "Redux", "Expres.Js", "Js"]
+    tags: ["React", "Axios", "Node.Js", "Socket.io", "Redux", "Expres.Js", "Js"],
+    link: "https://github.com/del-alj/Red-Tetris",
   },
   {
     name: "Matcha",
@@ -36,17 +37,20 @@ export const projects = [
       "Expres.Js",
       "Js",
       "styled-Component"
-    ]
+    ],
+    link: "https://github.com/del-alj/client_matcha",
   },
   {
     name: "Corware",
     text: "Core War is a programming game in which two (or more) computer programs compete for control of a virtual machine called MARS, for Memory Array Redcode Simulator.",
-    tags: ["C", "Assembel"]
+    tags: ["C", "Assembel"],
+    link: "https://github.com/mohamedLazyBob/corewar",
   },
   {
     name: "Lem-In",
     text: "In Lem-in, you’ll receive a map that can consist of thousands of rooms that are connected. The map will have a starting room and an end room. You have to find all valid paths from smallest to largest.",
-    tags: ["C", "Python"]
+    tags: ["C", "Python"],
+    link: "https://github.com/del-alj/lem-in",
   }
 ];
 
