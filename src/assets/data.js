@@ -1,3 +1,5 @@
+import keyboard from "./keyboard.png";
+
 export const header = {
   logo: "Douae Elalj",
   list: ["About", "projects", "Contact"],
@@ -8,13 +10,13 @@ export const home = {
   titel0: "Hello, My name is",
   titel1: "Douae elalj.",
   titel2: "software engineer and frontend developer.",
-  text: "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.",
+  text: "i create interfaces and experiences for businesses big and small i'm currently available.",
 };
 
 export const about = {
-  paragraph: `Hello! My name is Douae and I enjoy creating things. My interest in web development started back in 2018 when I decided to enter in 1337 school.
-    I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.
-    Here are a few technologies I’ve been working with recently;`,
+  paragraph: <span>Hello! My name is Douae and I enjoy creating things.
+  My interest in programming started in 2018 when I decided to enter 1337 school. 
+ I was fascinated by how we can create complex things by tapping on {<span><img src={keyboard} width={19} /></span>}. I feel alive when I code end i enjoy learning new things. Here are some of the tools I've been working with lately;</span>,
   tags: ["html/css", "Javascript", "React", "Node.Js", "Postgresql"],
   gif: ""
 };
