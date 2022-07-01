@@ -4,11 +4,12 @@ import { palette } from "../../../../assets/color";
 import PropTypes from "prop-types";
 import dossier from "../../../../assets/dossier.png";
 import github from "../../../../assets/github.png";
+import {DivItem} from "../styles";
 export const Item = (props) => {
   const { sx, ...other } = props;
   const { name, text, tags, link } = props.data;
   return (
-    <div>
+    <DivItem>
       <Box
         sx={{
           textAlign: "left",
@@ -70,7 +71,7 @@ export const Item = (props) => {
           </div>
         </div>
       </Box>
-    </div>
+    </DivItem>
   );
 };
 
