@@ -22,8 +22,9 @@ export const Home = () => {
           // border: "1px solid black",
           alignSelf: "flex-start",
           flexDirection: "column",
+          minWidth: 200,
           width: 474,
-          marginLeft: "150px"
+          // marginLeft: "150px"
         }}
       >
         {/* 602 khesni nhayed mardin hna o padin me parent */}
@@ -31,6 +32,7 @@ export const Home = () => {
           style={{
             textAlign: "left",
             color: palette.yellow,
+            fontFamily: "norwester",
             fontSize: "1.2em",
             fontWeight: "normal !important"
           }}
@@ -42,16 +44,18 @@ export const Home = () => {
             textAlign: "left",
             color: palette.gray,
             fontSize: "3.3em",
-            fontWeight: "normal !important"
+            fontWeight: "normal !important",
+            fontFamily: "norwester"
           }}
         >
           {home.titel1}
         </p>
         <p
           style={{
+            fontFamily: "norwester",
             textAlign: "left",
             color: palette.gray,
-            opacity: 0.7,
+            opacity: 0.5,
             fontSize: "3em",
             fontWeight: `normal !important`
           }}
