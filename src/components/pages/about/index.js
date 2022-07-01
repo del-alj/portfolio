@@ -4,7 +4,7 @@ import { about } from "../../../assets/data";
 import { palette } from "../../../assets/color";
 import me from "../../../assets/me.gif";
 import PropTypes from "prop-types";
-
+import { BoxDiv, BoxGrid } from "../../style/styled-component";
 function Item(props) {
   const { sx, ...other } = props;
   return (
@@ -41,13 +41,15 @@ Item.propTypes = {
 
 export const About = () => {
   return (
-    <div 
+    <div
       style={{
-        // border: "1px solid red",
         display: "flex",
         flexDirection: "column",
-        minWidth: "30em",
+        // minWidth: "30em",
         minHeight: "100%",
+        paddingLeft: "10rem",
+        paddingTop: "10rem",
+        paddingRight: "10rem"
         // backgroundColor: palette.gray
       }}
     >
@@ -73,18 +75,7 @@ export const About = () => {
         >
           About me
         </p>
-        <Box
-          style={{
-            // border: "1px solid black",
-            alignSelf: "center",
-    
-            display: "flex",
-            width: "650px",
-            justifyContent: "space-between",
-            // flexDirection: "column",
-            marginTop: "150px"
-          }}
-        >
+        <BoxDiv>
           <img
             style={{
               width: "300px",
@@ -105,22 +96,13 @@ export const About = () => {
           >
             {about.paragraph}
           </p>
-        </Box>
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "repeat(6, 1fr)",
-            marginTop: "7em",
-            gridGap: "0.5em",
-            width: "100%",
-            justifyContent: "center",
-            paddingBottom: "3em"
-          }}
+        </BoxDiv>
+        <BoxGrid
         >
           {about.tags.map((elem, index) => {
             return <Item>{elem}</Item>;
           })}
-        </Box>
+        </BoxGrid>
       </Box>
     </div>
   );
