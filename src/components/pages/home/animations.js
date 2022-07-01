@@ -18,7 +18,7 @@ export const Animation = styled.div`
     props.src ? `url(${props.src})` : "none"};
 
     /* animation-fill-mode: forwards; */
-    background-size: 250px auto;
+    background-size: 210px auto;
     background-repeat: no-repeat;
     /* background-size: 200% 100%; */
     border: "1px solid red";
