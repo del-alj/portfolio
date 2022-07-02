@@ -68,7 +68,8 @@ export const Contact = () => {
             alignSelf: "left",
 
             display: "flex",
-            width: "500px",
+            // width: "500px",
+            // min
             height: "450px",
             justifyContent: "space-around",
             flexDirection: "column",
@@ -90,7 +91,7 @@ export const Contact = () => {
             minRows={10}
             placeholder="Enter you mssage"
             style={{
-              width: 450,
+              width: 350,
               height: 200,
               background: "none",
               padding: "1em",
