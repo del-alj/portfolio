@@ -37,7 +37,7 @@ export const Contact = () => {
         // border: "1px solid red",
         display: "flex",
         flexDirection: "column",
-        minHeight: "93vh",
+        minHeight: "100vh",
         paddingTop: "10rem",
         paddingBottom: "5em",
       }}

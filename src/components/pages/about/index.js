@@ -43,15 +43,6 @@ export const About = () => {
   return (
     <div
       style={{
-        // display: "flex",
-        // flexDirection: "column",
-        // // minWidth: "30em",
-        // minHeight: "100%",
-        // paddingLeft: "10rem",
-        // paddingTop: "10rem",
-        // paddingRight: "10rem"
-
-
         display: "flex",
         flexDirection: "column",
         minHeight: "100%",
@@ -61,11 +52,8 @@ export const About = () => {
     >
       <Box
         sx={{
-          // border: "1px solid black",
           alignSelf: "center",
           flexDirection: "column",
-          // width: 474,
-          // marginLeft: "150px",
           display: "flex"
         }}
       >

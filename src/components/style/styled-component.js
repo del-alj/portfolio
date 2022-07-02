@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BoxDiv = styled.div`
   display: flex;
   align-self: center;
-  /* width: 650px; */
+  width: 650px;
   justify-content: space-between;
   flex-direction: row;
   margin-top: 150px;
@@ -11,6 +11,8 @@ export const BoxDiv = styled.div`
     flex-direction: column;
     align-items: center;
     font-size: larger;
+    width: auto;
+
   }
 `;
 
