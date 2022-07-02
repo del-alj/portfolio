@@ -6,9 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
   height: auto;
-  width: 100vh;
+  
+  width: auto;
+  /* min-height: 100vh;
+  overflow-x: hidden; */
 }
 
 code {
