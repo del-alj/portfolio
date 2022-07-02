@@ -37,10 +37,9 @@ export const Contact = () => {
         // border: "1px solid red",
         display: "flex",
         flexDirection: "column",
-        // minWidth: "30em",
-        minHeight: "70vh",
-        // backgroundColor: palette.gray,
-        paddingBottom: "3em"
+        minHeight: "100%",
+        paddingTop: "10rem",
+        paddingBottom: "5em",
       }}
     >
       <Box

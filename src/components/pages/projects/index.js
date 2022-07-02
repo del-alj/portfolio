@@ -17,6 +17,7 @@ export const Projects = () => {
         // minWidth: "30em",
         minHeight: "100%",
         paddingBottom: "5em",
+        paddingTop: "10rem",
         // backgroundColor: palette.gray
       }}
     >

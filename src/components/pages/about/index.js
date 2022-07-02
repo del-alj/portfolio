@@ -43,15 +43,20 @@ export const About = () => {
   return (
     <div
       style={{
-        // border: "1px solid red",
+        // display: "flex",
+        // flexDirection: "column",
+        // // minWidth: "30em",
+        // minHeight: "100%",
+        // paddingLeft: "10rem",
+        // paddingTop: "10rem",
+        // paddingRight: "10rem"
+
+
         display: "flex",
         flexDirection: "column",
-        // minWidth: "30em",
         minHeight: "100%",
-        paddingLeft: "10rem",
         paddingTop: "10rem",
-        paddingRight: "10rem"
-        // backgroundColor: palette.gray
+        paddingBottom: "5em",
       }}
     >
       <Box

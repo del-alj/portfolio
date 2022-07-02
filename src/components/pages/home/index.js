@@ -10,14 +10,14 @@ export const Home = () => {
   return (
     <div
       style={{
-        // border: "1px solid red",
+
         display: "flex",
         flexDirection: "column",
         // minWidth: "30em",
         minHeight: "100%",
-        paddingLeft: "10rem",
         paddingTop: "10rem",
-        paddingRight: "10rem",
+        // paddingLeft: "10rem",
+        // paddingRight: "10rem",
       }}
     >
       <Box
