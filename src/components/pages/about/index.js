@@ -43,6 +43,7 @@ export const About = () => {
   return (
     <div
       style={{
+        // border: "1px solid red",
         display: "flex",
         flexDirection: "column",
         // minWidth: "30em",

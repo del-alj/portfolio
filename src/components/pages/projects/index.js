@@ -14,7 +14,7 @@ export const Projects = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        minWidth: "30em",
+        // minWidth: "30em",
         minHeight: "100%",
         paddingBottom: "5em",
         // backgroundColor: palette.gray

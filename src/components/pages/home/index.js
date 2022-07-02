@@ -13,7 +13,7 @@ export const Home = () => {
         // border: "1px solid red",
         display: "flex",
         flexDirection: "column",
-        minWidth: "30em",
+        // minWidth: "30em",
         minHeight: "100%",
         paddingLeft: "10rem",
         paddingTop: "10rem",
