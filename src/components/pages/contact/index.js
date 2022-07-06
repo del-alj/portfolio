@@ -39,7 +39,7 @@ export const Contact = () => {
         flexDirection: "column",
         minHeight: "100vh",
         paddingTop: "10rem",
-        paddingBottom: "5em",
+        // paddingBottom: "5em",
       }}
     >
       <Box
@@ -57,7 +57,8 @@ export const Contact = () => {
             textAlign: "center",
             color: palette.blue,
             fontSize: "3.3em",
-            fontWeight: "normal !important"
+            fontWeight: "normal !important",
+            fontFamily: "norwester",
           }}
         >
           Contact me

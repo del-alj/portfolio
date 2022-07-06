@@ -26,7 +26,8 @@ export const Projects = () => {
           textAlign: "center",
           color: palette.blue,
           fontSize: "3.3em",
-          fontWeight: "normal !important"
+          fontWeight: "normal !important",
+          fontFamily: "norwester",
         }}
       >
         Project
