@@ -22,96 +22,100 @@ export const Header = () => {
     if (temp[3]) {
       setTheme(1);
       changeColorBc(palette.whitePurpel);
-
     } else setTheme(0);
   }, [temp]);
 
   return (
     <Box sx={{ flexGrow: 1, mr: 60 }}>
-
-    <AppBar
-      className="page"
-      style={{
-        background: palette.première,
-        boxShadow: "none",
-        // maxWidth: "1440px",
-        // display: "flex",
-        // alignItems: "center",
-      }}
-    >
-      <Toolbar style={{
-        display: "flex",
-        justifyItems: "center",
-        maxWidth: "1440px",
-        flexDirection: "space-between",
-        width: "100%",
-        marginLeft: "auto",
-        boxSizing: "border-box",
-        marginRight: "auto",
-      }}>
-        <Link style={{ textDecoration: "none" }} to={`/`}>
-          <Button
-            onClick={(e) => {
-              changeColorBc(palette.purpel);
-              setTheme(0);
-            }}
-            color="inherit"
-            style={{
-              fontSize: "1em",
-              color: `${theme === 0 ? palette.gray : palette.blue}`,
-              fontFamily: "norwester"
-            }}
-          >
-            {header.logo}
-          </Button>
-        </Link>
-        <Typography
-          variant="h6"
-          component="div"
-          sx={{ flexGrow: 1 }}
-        ></Typography>
-        {list.map((elem, index) => {
-          return (
-            <Link
-              key={`Link${index}`}
-              style={{ textDecoration: "none" }}
-              to={`/${elem}`}
-              onClick={(e) => {
-                changeColorBc(palette.whitePurpel);
-                setTheme(1);
-              }}
-            >
-              <Button
-                key={`button${index}`}
-                aria-haspopup="true"
-                // onClick={handleProfileMenuOpen}
-                color="inherit"
-                style={{
-                  color: `${theme === 0 ? palette.gray : palette.blue}`,
-                  fontFamily: "norwester"
-                }}
-              >
-                {elem}
-              </Button>
-            </Link>
-          );
-        })}
-        <Button
-          className=""
-          color="inherit"
+      <AppBar
+        className="page"
+        style={{
+          background: palette.première,
+          boxShadow: "none",
+          // maxWidth: "1440px",
+          // display: "flex",
+          // alignItems: "center",
+        }}
+      >
+        <Toolbar
           style={{
-            fontSize: "0.7em",
-            paddingTop: "3px",
-            paddingBottom: "3px",
-            color: theme === 0 ? palette.yellow : palette.rose,
-            border: `2px solid ${theme === 0 ? palette.yellow : palette.rose}`,
-            fontFamily: "norwester"
+            display: "flex",
+            justifyItems: "center",
+            maxWidth: "1440px",
+            flexDirection: "space-between",
+            width: "100%",
+            marginLeft: "auto",
+            boxSizing: "border-box",
+            marginRight: "auto",
           }}
         >
-          {header.button}
-        </Button>
-      </Toolbar>
-    </AppBar>
+          <Link style={{ textDecoration: "none" }} to={`/`}>
+            <Button
+              onClick={(e) => {
+                changeColorBc(palette.purpel);
+                setTheme(0);
+              }}
+              color="inherit"
+              style={{
+                fontSize: "1em",
+                color: `${theme === 0 ? palette.gray : palette.blue}`,
+                fontFamily: "norwester",
+              }}
+            >
+              {header.logo}
+            </Button>
+          </Link>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+          ></Typography>
+          {list.map((elem, index) => {
+            return (
+              <Link
+                key={`Link${index}`}
+                style={{ textDecoration: "none" }}
+                to={`/${elem}`}
+                onClick={(e) => {
+                  changeColorBc(palette.whitePurpel);
+                  setTheme(1);
+                }}
+              >
+                <Button
+                  key={`button${index}`}
+                  aria-haspopup="true"
+                  // onClick={handleProfileMenuOpen}
+                  color="inherit"
+                  style={{
+                    color: `${theme === 0 ? palette.gray : palette.blue}`,
+                    fontFamily: "norwester",
+                  }}
+                >
+                  {elem}
+                </Button>
+              </Link>
+            );
+          })}
+          <Button
+            className=""
+            color="inherit"
+            style={{
+              fontSize: "0.7em",
+              paddingTop: "3px",
+              paddingBottom: "3px",
+              color: theme === 0 ? palette.yellow : palette.rose,
+              border: `2px solid ${
+                theme === 0 ? palette.yellow : palette.rose
+              }`,
+              fontFamily: "norwester",
+            }}
+            href="https://drive.google.com/file/d/1e4xjrDBaaR42CIweOXpKodd-ki9_hFeN/view?usp=sharing"
+            target="-blank"
+          >
+            {header.button}
+          </Button>
+        </Toolbar>
+      </AppBar>
     </Box>
   );
 };
