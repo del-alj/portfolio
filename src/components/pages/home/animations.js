@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Animation = styled.div`
   /* border: 1px solid red; */
+  display: block;
+  @media (max-width: 700px) {
+    display: none;
+  }
   height: 380px;
   .outer {
     height: 100%;
@@ -72,5 +76,12 @@ export const Block = styled.div`
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+  }
+`;
+
+export const AnimationMobile = styled.div`
+  display: none;
+  @media (max-width: 700px) {
+    display: block;
   }
 `;

@@ -3,7 +3,8 @@ import { Box, Paper, styled, Button } from "@mui/material";
 import { home } from "../../../assets/data";
 import { palette } from "../../../assets/color";
 import mewallk from "../../../assets/mewallk.gif";
-import { Animation, Block } from "./animations.js";
+import meMobile from "../../../assets/memobile.gif";
+import { Animation, Block, AnimationMobile } from "./animations.js";
 
 export const Home = () => {
   return (
@@ -109,6 +110,9 @@ export const Home = () => {
             /> */}
           </div>
         </Animation>
+        <AnimationMobile>
+          <img src={meMobile}/>
+        </AnimationMobile>
       </Box>
     </Block>
   );
