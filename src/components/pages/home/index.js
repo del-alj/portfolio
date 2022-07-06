@@ -3,14 +3,12 @@ import { Box, Paper, styled } from "@mui/material";
 import { home } from "../../../assets/data";
 import { palette } from "../../../assets/color";
 import mewallk from "../../../assets/mewallk.gif";
-import { Animation } from "./animations.js";
+import { Animation, Block } from "./animations.js";
 
 export const Home = () => {
-
   return (
-    <div
+    <Block
       style={{
-
         display: "flex",
         flexDirection: "column",
         // minWidth: "30em",
@@ -32,46 +30,50 @@ export const Home = () => {
       >
         {/* 602 khesni nhayed mardin hna o padin me parent */}
         <p
+          className="animated animatedFadeInUp fadeInUp"
           style={{
             textAlign: "left",
             color: palette.yellow,
             fontFamily: "norwester",
             fontSize: "1.2em",
-            fontWeight: "normal !important"
+            fontWeight: "normal !important",
           }}
         >
           {home.titel0}
         </p>
         <p
+          className="animated animatedFadeInUp fadeInUp"
           style={{
             textAlign: "left",
             color: palette.gray,
             fontSize: "3.3em",
             fontWeight: "normal !important",
-            fontFamily: "norwester"
+            fontFamily: "norwester",
           }}
         >
           {home.titel1}
         </p>
         <p
+          className="animated animatedFadeInUp fadeInUp"
           style={{
             fontFamily: "norwester",
             textAlign: "left",
             color: palette.gray,
             opacity: 0.5,
             fontSize: "3em",
-            fontWeight: `normal !important`
+            fontWeight: `normal !important`,
           }}
         >
           {home.titel2}
         </p>
         <p
+          className="animated animatedFadeInUp fadeInUp"
           style={{
             textAlign: "left",
             color: palette.whitePurpel,
             fontFamily: `'Roboto', sans-serif`,
             fontWeight: `normal !important`,
-            fontSize: "1.5em"
+            fontSize: "1.5em",
           }}
         >
           {home.text}
@@ -92,6 +94,6 @@ export const Home = () => {
           </div>
         </Animation>
       </Box>
-    </div>
+    </Block>
   );
 };
