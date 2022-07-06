@@ -111,7 +111,7 @@ export const Home = () => {
           </div>
         </Animation>
         <AnimationMobile>
-          <img src={meMobile}/>
+          <img  className="animated animatedFadeInUp fadeInUp" src={meMobile}/>
         </AnimationMobile>
       </Box>
     </Block>
