@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Paper, styled } from "@mui/material";
+import { Box, Paper, styled, Button } from "@mui/material";
 import { home } from "../../../assets/data";
 import { palette } from "../../../assets/color";
 import mewallk from "../../../assets/mewallk.gif";
@@ -78,6 +78,22 @@ export const Home = () => {
         >
           {home.text}
         </p>
+        <Button
+            color="inherit"
+            style={{
+              fontSize: "1em",
+              color: palette.première,
+              width: "10em",
+              border: `2px solid ${palette.yellow}`,
+              background: palette.yellow,
+              fontFamily: "norwester",
+            }}
+            href="mailto:douae.elalj@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {"Get in touch"}
+          </Button>
       </Box>
 
       <Box>

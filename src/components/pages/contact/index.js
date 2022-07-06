@@ -4,7 +4,7 @@ import {
   Button,
   styled,
   TextField,
-  TextareaAutosize
+  TextareaAutosize,
 } from "@mui/material";
 import { palette } from "../../../assets/color";
 
@@ -12,22 +12,22 @@ const CssTextField = styled(TextField)({
   marginLeft: "3em",
   color: palette.purpel,
   "& label.Mui-focused": {
-    color: palette.purpel
+    color: palette.purpel,
   },
   "& .MuiInput-underline:after": {
-    borderColor: palette.purpel
+    borderColor: palette.purpel,
   },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
-      borderColor: palette.purpel
+      borderColor: palette.purpel,
     },
     "&:hover fieldset": {
-      borderColor: palette.purpel
+      borderColor: palette.purpel,
     },
     "&.Mui-focused fieldset": {
-      borderColor: palette.purpel
-    }
-  }
+      borderColor: palette.purpel,
+    },
+  },
 });
 
 export const Contact = () => {
@@ -49,7 +49,7 @@ export const Contact = () => {
           flexDirection: "column",
           // width: 474,
           // marginLeft: "150px",
-          display: "flex"
+          display: "flex",
         }}
       >
         <p
@@ -74,7 +74,7 @@ export const Contact = () => {
             height: "450px",
             justifyContent: "space-around",
             flexDirection: "column",
-            padding: "3em"
+            padding: "3em",
           }}
         >
           <CssTextField
@@ -101,7 +101,7 @@ export const Contact = () => {
               color: palette.purpel,
               border: `1px solid ${palette.purpel}`,
               borderRadius: `4px`,
-              outlineColor: palette.purpel
+              outlineColor: palette.purpel,
             }}
           />
           <Button
@@ -116,8 +116,10 @@ export const Contact = () => {
               background: palette.yellow,
               fontFamily: "norwester",
               alignSelf: "center",
-              
             }}
+            href="mailto:douae.elalj@gmail.com"
+            target="_blank"
+            rel="noreferrer"
           >
             {"Submit"}
           </Button>
