@@ -25,6 +25,7 @@ export const Item = (props) => {
           ...sx
         }}
         {...other}
+        style={{height:"90%"}}
       >
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <img style={{ width: "24px", height: "23.5px" }} src={dossier} />

@@ -14,7 +14,7 @@ export const Home = () => {
         flexDirection: "column",
         // minWidth: "30em",
         minHeight: "100vh",
-        paddingTop: "10rem",
+        paddingTop: "5rem",
         // paddingLeft: "10rem",
         // paddingRight: "10rem",
       }}

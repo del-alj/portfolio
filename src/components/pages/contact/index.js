@@ -38,7 +38,7 @@ export const Contact = () => {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
-        paddingTop: "10rem",
+        paddingTop: "5rem",
         // paddingBottom: "5em",
       }}
     >

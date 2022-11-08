@@ -2,7 +2,9 @@ import keyboard from "./keyboard.png";
 
 export const header = {
   logo: "Douae Elalj",
-  list: ["About", "projects", "Contact"],
+  list: ["About", "projects", 
+  // "Contact"
+],
   button: "Resume"
 };
 

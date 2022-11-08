@@ -46,7 +46,7 @@ export const About = () => {
         display: "flex",
         flexDirection: "column",
         minHeight: "100%",
-        paddingTop: "10rem",
+        paddingTop: "5rem",
         paddingBottom: "5em",
       }}
     >
