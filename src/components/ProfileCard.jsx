@@ -1,6 +1,7 @@
 // src/components/ProfileCard.jsx
 import React from "react";
 import styled from "styled-components";
+import profilePic from '../assets/photo.jpeg';
 
 const Card = styled.div`
   background: var(--card);
@@ -32,9 +33,19 @@ const Tag = styled.span`
   font-weight:600;
 `;
 
+
+
+
+
 const ProfileCard = () => (
   <Card>
-    <ProfilePhoto>Your photo</ProfilePhoto>
+<ProfilePhoto>
+  <img 
+    src={profilePic} 
+    alt="Douae ElAlj" 
+    style={{ width: '350px', height:'220px', borderRadius: '5%' }}
+  />
+</ProfilePhoto>
     <div style={{marginBottom:'12px'}}>
       <div>Email: <a href="mailto:you@example.com">douae.elalj@.gmail.com</a></div>
       <div>LinkedIn: <a href="www.linkedin.com/in/douae-el-alj" target="_blank" rel="noopener noreferrer">linkedin.com/in/douae-el-alj</a></div>
