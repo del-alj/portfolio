@@ -55,13 +55,13 @@ const Hero = () => {
     <HeroSection>
       <Intro>
         <h2>I craft clean, useful digital experiences — with a Moroccan touch.</h2>
-        <p>Design-forward, pragmatic portfolio that puts projects first. I like clear interfaces, subtle details, and yellow that feels warm, not loud.</p>
+        <p>I’m currently open to remote opportunities worldwide where I can contribute to meaningful, user-focused products.</p>
         <CTA>
           <Button primary href="#projects" onClick={(e)=>scrollTo(e,"#projects")}>See projects</Button>
           <Button href="#contact" onClick={(e)=>scrollTo(e,"#contact")}>Contact me</Button>
           <Button href="#">Download resume</Button>
         </CTA>
-        <p style={{color:'var(--subtle)', fontSize:'13px'}}>Available for freelance remote work • Based in Morocco</p>
+        <p style={{color:'var(--subtle)', fontSize:'13px'}}>Available for full-time or freelance remote work • Open to global teams</p>
       </Intro>
       <ProfileCard />
     </HeroSection>

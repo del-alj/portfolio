@@ -36,8 +36,8 @@ const ProfileCard = () => (
   <Card>
     <ProfilePhoto>Your photo</ProfilePhoto>
     <div style={{marginBottom:'12px'}}>
-      <div>Email: <a href="mailto:you@example.com">you@example.com</a></div>
-      <div>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourname</a></div>
+      <div>Email: <a href="mailto:you@example.com">douae.elalj@.gmail.com</a></div>
+      <div>LinkedIn: <a href="www.linkedin.com/in/douae-el-alj" target="_blank" rel="noopener noreferrer">linkedin.com/in/douae-el-alj</a></div>
       <div>Location: <Tag>Morocco</Tag></div>
     </div>
     <div>
