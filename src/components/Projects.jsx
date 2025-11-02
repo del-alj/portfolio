@@ -88,7 +88,7 @@ const projects = [
     thumb: "SirWay — Tram mapping",
     desc: "Interactive tram mapping app built to visualize tram networks, live stops, and routing. Focus: UX, map clarity, and offline performance.",
     tags: ["React", "Leaflet", "GIS"],
-    link: "#"
+    link: "/sirway"
   },
   {
     title: "Transport Planner (team)",
