@@ -2,6 +2,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import SirWayLogo from '../assets/logoIcon.png';
+
 const Section = styled.section`
   margin-bottom:28px;
 `;
@@ -85,7 +87,7 @@ const NavLink = styled.a`
 const projects = [
   {
     title: "SirWay — Tram mapping (personal)",
-    thumb: "SirWay — Tram mapping",
+    thumb: SirWayLogo,
     desc: "Interactive tram mapping app built to visualize tram networks, live stops, and routing. Focus: UX, map clarity, and offline performance.",
     tags: ["React", "Leaflet", "GIS"],
     link: "/sirway"
@@ -110,14 +112,16 @@ const Projects = () => (
   <Section id="projects" aria-labelledby="projects-heading">
     <h3 id="projects-heading">Selected projects</h3>
     <Grid role="list">
-      {projects.map((p,i)=>(
+      {projects.map((p, i) => (
         <ProjectCard key={i} role="listitem" tabIndex={0}>
-          <Thumb>{p.thumb}</Thumb>
+          <Thumb>
+            <img src={p.thumb} alt={p.title} style={{ height: 'auto', width: '100px' }} />
+          </Thumb>
           <Body>
             <Title>{p.title}</Title>
             <Desc>{p.desc}</Desc>
             <Meta>
-              {p.tags.map((t,j)=><Tag key={j}>{t}</Tag>)}
+              {p.tags.map((t, j) => <Tag key={j}>{t}</Tag>)}
               <NavLink className="navlink" href={p.link}>View →</NavLink>
             </Meta>
           </Body>
